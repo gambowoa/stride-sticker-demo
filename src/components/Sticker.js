@@ -21,7 +21,6 @@ import Sticker7 from "../images/stickers/sticker7.svg";
 import Sticker8 from "../images/stickers/sticker8.svg";
 import Sticker9 from "../images/stickers/sticker9.svg";
 
-import sample from "lodash/sample";
 import { useState } from "react";
 import { useEffect } from "react";
 import random from "lodash/random";
@@ -43,7 +42,7 @@ const Sticker = ({
     <StyledSticker
       design={design}
       as={motion.div}
-      animate={{ scale: scale, rotate: rotation }}
+      animate={{ scale: scale, rotate: rotation + "deg" }}
       transition={{
         type: "spring",
         damping: 16,

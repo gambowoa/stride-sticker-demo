@@ -77,7 +77,7 @@ const StickerBackground = () => {
           x: currentSticker.coordinates.x,
           y: currentSticker.coordinates.y,
         },
-        rotation: random(-45, 45),
+        rotation: random(-20, 20),
         isVisible: true,
         scale: random(2, 2.5, true),
         isFirstSticker: false,
@@ -125,7 +125,9 @@ const StickerBackground = () => {
             )
           );
         })}
-        <p style={{ position: "relative" }}>Stride Micro Design Career Fair</p>
+        <p style={{ position: "relative", pointerEvents: "none" }}>
+          Stride Micro Design Career Fair
+        </p>
       </StyledStickerBackground>{" "}
     </>
   );
